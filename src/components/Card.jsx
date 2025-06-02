@@ -4,7 +4,7 @@ import { LuLeafyGreen } from 'react-icons/lu'
 import { GiChickenOven } from 'react-icons/gi'
 function Card({ name, image, id, price, type }) {
   return (
-    <div className='w-[300px] h-[400px] shadow-md rounded-lg shadow-lg bg-white shadow-sm flex flex-col gap-4 hover:transition-all '>
+    <div className='w-[300px] h-[400px] shadow-md rounded-lg shadow-lg bg-white shadow-sm flex flex-col gap-4  transition-transform duration-300 hover:scale-105'>
       <div className='w-[300px] h-[250px]  w-full overflow-hidden p-4'>
         <img src={image} alt='' className='w-full rounded-lg object-cover' />
       </div>
