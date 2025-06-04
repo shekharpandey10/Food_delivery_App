@@ -5,6 +5,7 @@ import Card from '../components/Card'
 import { food_items } from '../food'
 import { dataContext } from '../context/UserContext'
 import { RxCross2 } from "react-icons/rx";
+import Card2 from '../components/Card2'
 
 const Home = () => {
   let{filteredItems,setFilteredItems,input,showCard,setShowCard}=useContext(dataContext)
@@ -49,11 +50,12 @@ const Home = () => {
       </div>
       <div className={`w-[40vw] h-[100%] fixed top-0 right-0 bg-white shadow-md transition-all duration-500 ${showCard?"translate-x-0":"translate-x-full"}`} >
         <header className='flex justify-between p-4'>
-        <span className='text-2xl text-green-500 font-semibold '>  Order Items...</span>
+        <span className='text-2xl text-green-500 font-semibold '>  Order Items</span>
         <RxCross2 className='text-2xl font- cursor-pointer hover:text-gray-300 text-green-400 w-8' onClick={()=>{
           setShowCard(false)
         }}/>
         </header>
+        <Card2/>
       </div>
     </div>
   )
